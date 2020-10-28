@@ -9,15 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <artifactId>ticket-web</artifactId>
 
-    <artifactId>ticket-configuration</artifactId>
-
-    <dependencies>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
-        </dependency>
-    </dependencies>
 
 </project>
