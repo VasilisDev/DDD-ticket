@@ -7,10 +7,9 @@
         <module>ticket-application</module>
         <module>ticket-configuration</module>
         <module>ticket-security</module>
-        <module>ticket-adapter</module>
-        <module>ticket-persitence</module>
-        <module>ticket-web</module>
-        <module>ticket-persistence</module>
+        <module>ticket-adapter/ticket-persistence</module>
+        <module>ticket-adapter/ticket-web</module>
+        <module>ticket-core</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -33,18 +32,6 @@
 
     <dependencies>
 
-        <!-- exclude junit 4 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>junit</groupId>
-                    <artifactId>junit</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
 
         <!-- junit 5 -->
         <dependency>
@@ -70,24 +57,7 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>provided</scope>
-        </dependency>
+        
     </dependencies>
 
     <build>
